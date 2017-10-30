@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+.header, .footer {
+    background-color: maroon;
+    color: white;
+    padding: 15px;
+}
+.column {
+    float: left;
+    padding: 15px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.menu {
+    width: 25%;
+}
+.content {
+    width: 75%;
+}
+.more {
+float:right;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: teal;
+   
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+
+img {
+width:200px;
+height:150px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Enver Creek Secondary</h1>
+</div>
+
+<div class="clearfix">
+  <div class="column menu">
+    <ul>
+      <li>Main Page</li>
+      <li>Clubs and Teams</li>
+      <li>Departments</li>
+     
+    </ul>
+  </div>
+
+  <div class="column content">
+    <h1>Math</h1>
+    <img src="http://www.adrianbulldogs.com/sports/w-volley/2015-16/photos/sklar-volleyball_story.jpg">
+    <p>At Enver Creek we provide a great program for students who are interested in playing to participate in friendly games against other schools.</p>
+  
+  </div>
+  
+   <div class="column content more">
+    <h1>Performing arts</h1>
+    <img src="http://fistfuloftalent.com/wp-content/uploads/2017/10/12151309.jpg">
+    <p> Enver Creek is one of the best schools in Surrey, Bc. At Enver Creek Secondary we provide great opportunites for success and prepare students for their further post secondary education.</p>
+  
+  </div>
+  
+   <div class="column content more">
+    <h1>Languages</h1>
+    <img src="http://boykinsbasketball.com/wp-content/uploads/2016/08/Basketball-Nike.jpg">
+    <p> Enver Creek is one of the best schools in Surrey, Bc. At Enver Creek Secondary we provide great opportunites for success and prepare students for their further post secondary education.</p>
+  
+  </div>
+  
+   <div class="column content more">
+    <h1>Physical Education</h1>
+    <img src="https://cdn.thehockeypaper.co.uk/wp-content/uploads/2017/05/DSC_1066.jpeg">
+    <p> Enver Creek is one of the best schools in Surrey, Bc. At Enver Creek Secondary we provide great opportunites for success and prepare students for their further post secondary education.</p>
+  
+  </div>
+</div>
+
+<div class="footer">
+  <p>14505-84 Avenue</p>
+  <p>Surrey, B.C. Canada</p>
+  <p>V3S 8X2 </p>
+  <p>Phone: 604-543-8149 </p>
+  <p>Fax: 604-543-9762</p>
+</div>
+
+</body>
+</html>
