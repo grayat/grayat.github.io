@@ -1,97 +1,165 @@
-<!DOCTYPE html>
-<html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<DOCTYPE html>
+<head>
 <style>
-body, html {
-    height: 100%;
-    font-family: "Inconsolata", sans-serif;
+* {
+    box-sizing: border-box;
 }
-.bgimg {
-    background-position: center;
-    background-size: cover;
-    background-image: url("/w3images/coffeehouse.jpg");
-    min-height: 75%;
+.footer {
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+.column {
+    float: left;
+    padding: 15px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 .menu {
-    display: none;
+    width: 25%;
 }
-</style>
-<body>
-
-<!-- Links (sit on top) -->
-<div class="w3-top">
-  <div class="w3-row w3-padding w3-black">
-    <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block w3-black">HOME</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#about" class="w3-button w3-block w3-black">MENU</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#menu" class="w3-button w3-block w3-black">LOCATION</a>
-    </div>
-    
-  </div>
-</div>
-<!-- Menu Container -->
-<div class="w3-container" id="menu">
-  <div class="w3-content" style="max-width:700px">
+.content {
+    width: 75%;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: teal;
+   
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+.menu li a {
+ text-decoration:none;
+ color:white;
+ } 
  
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+    
+img {
+width:100%;
+height:100%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:black;
+}
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color:gray;
+}
+.active {
+    background-color:gray;
+}
+
+p.groove {
+ border-style: groove;
+ background-color:white;
+ padding:20px;
+ font-size:40px;
+ letter-spacing: 2px;
+ font-family:monospace;
+
+ }
+ 
+ #brunch {
+ border-left: 6px solid black;
+    background-color: lightgrey;
+    }
+ 
+</style>
+</head>
+
+
+
+
+
+<body>
+<center>
+<ul>
+  <li><a class="active" href="#home">HOME</a></li>
+  <li><a href="#menu">MENU</a></li>
+  <li><a href="#location">LOCATION</a></li>
   
-    <div class="w3-row w3-center w3-card w3-padding">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
-        <div class="w3-col s6 tablink">Eat</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
-        <div class="w3-col s6 tablink">Drink</div>
-      </a>
-    </div>
+</ul>
 
-    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Bread Basket</h5>
-      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
-    
-      <h5>Honey Almond Granola with Fruits</h5>
-      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
-    
-      <h5>Belgian Waffle</h5>
-      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
-    
-      <h5>Scrambled eggs</h5>
-      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
-    
-      <h5>Blueberry Pancakes</h5>
-      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
-    </div>
+<p class="groove">MENUS</p>
 
-    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Coffee</h5>
-      <p class="w3-text-grey">Regular coffee 2.50</p><br>
-    
-      <h5>Chocolato</h5>
-      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
-    
-      <h5>Corretto</h5>
-      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
-    
-      <h5>Iced tea</h5>
-      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
-    
-      <h5>Soda</h5>
-      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
-    </div>  
-    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
-  </div>
+
+<p id="brunch">BRUNCH</p>
+<table>
+
+<tr>
+ <th>Item</th>
+ <th align="center">Price</th>
+ </tr>
+
+
+<tr>
+<td>Pizza bites<td>
+<td aligh="center">$10.00</td>
+</tr>
+ 
+ 
+<tr>
+<td></td>
+<td></td>
+
+</tr>
+ 
+
+
+
+
+
+</table>
+
+
+
+
+
+
+<div class="footer">
+  <p>Contact us @ 604-564-8856</p>
+  <p></p>
+  
 </div>
+  
 
 
 
-<!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
+
+
+
+
+
+
+
+
+
+
+
+</center>
+</body>
+</html>
