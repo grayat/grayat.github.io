@@ -1,59 +1,185 @@
-<!DOCTYPE html>
-<html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<DOCTYPE html>
+<head>
 <style>
-body, html {
-    height: 100%;
-    font-family: "Inconsolata", sans-serif;
+* {
+    box-sizing: border-box;
 }
-.bgimg {
-    background-position: center;
-    background-size: cover;
-    background-image: url("/w3images/coffeehouse.jpg");
-    min-height: 75%;
+.footer {
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+.column {
+    float: left;
+    padding: 15px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 .menu {
-    display: none;
+    width: 25%;
 }
-</style>
-<body>
-
-<!-- Links (sit on top) -->
-<div class="w3-top">
-  <div class="w3-row w3-padding w3-black">
-    <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block w3-black">HOME</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#about" class="w3-button w3-block w3-black">MENU</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#menu" class="w3-button w3-block w3-black">LOCATION</a>
-    </div>
+.content {
+    width: 75%;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: teal;
+   
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+.menu li a {
+ text-decoration:none;
+ color:white;
+ } 
+ 
     
-  </div>
+img {
+width:70%;
+height:40%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:black;
+}
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color:gray;
+}
+.active {
+    background-color:gray;
+}
+p.groove {
+ border-style: groove;
+ background-color:white;
+ padding:20px;
+ font-size:40px;
+ letter-spacing: 5px;
+ font-family:monospace;
+
+
+
+</style>
+</head>
+
+
+
+
+
+<body>
+<center>
+<div class="clearix">
+ <div class="column menu">
+<ul>
+  <li><a href="https://grayat.github.io/restaurant/main.html"><a class="active" href="#home">HOME</a></li>
+  <li><a href="https://grayat.github.io/restaurant/menu.html"><a href="#menu">MENU</a></li>
+  <li><a href=""><a href="#location">LOCATION</a></li>
+  
+</ul>
+
+</div>
 </div>
 
-<!-- About Container -->
-<div class="w3-container" id="location">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE CAFE</span></h5>
-    <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
-    <div class="w3-panel w3-leftbar w3-light-grey">
-      <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
-      <p>Chef, Coffeeist and Owner: Liam Brown</p>
-    </div>
-    <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
-    <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
-    <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
-  </div>
-</div>
-<!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
+
+
+<p class="groove">LOCATION<img src="http://stompstock.com/wp-content/uploads/symbiostock_rf_content/1645-minipic.jpg" alt="logo" style="float:right;width:70px;height:65px;"></p>
+
+
+<h1>Hours of operation:</h1>
+
+
+<table>
+<tr>
+<th>Day</th>
+<th>Hours</th>
+</tr>
+
+<tr>
+<td>Monday</td>
+<td>9am - 10pm</td>
+
+</tr>
+
+<tr>
+<td>Tuesday</td>
+<td>9am - 10pm</td>
+
+</tr>
+
+<tr>
+<td>Wednesday</td>
+<td>9am - 10pm</td>
+</tr>
+
+<tr>
+<td>Thursday</td>
+<td>9am - 10pm</td>
+</tr>
+
+<tr>
+<td>Friday</td>
+<td>9am - 10pm</td>
+
+</tr>
+<tr>
+<td>Saturday</td>
+<td>9am - 8pm</td>
+
+</tr>
+<tr>
+<td>Sunday</td>
+<td>9am - 8pm</td>
+
+</table>
+
+<h2>	Location in Vancouver</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m0!4v1510678414010!6m8!1m7!1s_zkV3iegGBPqlopal5fCYA!2m2!1d49.27517164147596!2d-123.1167303290824!3f0!4f0!5f1.1924812503605782" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<h2>Location in Langley</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m0!4v1510678787486!6m8!1m7!1sJWkb6cFexnePf8rZEyickg!2m2!1d49.13338197359106!2d-122.6685136727836!3f341.8156518898912!4f-3.257337693585896!5f1.1924812503605782" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<h2>Location in Delta</h2>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m0!4v1510678996870!6m8!1m7!1sPoGwejhto6CY5f9cLpPTvQ!2m2!1d49.14670712890385!2d-122.8902771433591!3f0!4f0!5f1.1924812503605782" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+<h2>Location in Richmond</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m0!4v1510679066979!6m8!1m7!1sEuwTy2st3w8KlOQZMOJqEg!2m2!1d49.16311575361998!2d-123.1403037309289!3f0!4f0!5f1.1924812503605782" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+
+<div class="footer">
+  <p>Contact us @ 604-564-8856</p>
+ </div>
+  
+
+
+
+
+
+</center>
+</body>
+</html>
