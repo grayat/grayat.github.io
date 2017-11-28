@@ -1,6 +1,8 @@
+var userInput = prompt("What is your choice?");
+userInput = userInput.toLowerCase();
+
 function getUserChoice() {
-  var userInput = prompt("What is your choice?");
-  userInput = userInput.toLowerCase();
+
   if (userInput === "rock") {
     return = userInput;
   } else if (userInput === "scissors") {
@@ -24,6 +26,23 @@ function getComputerChoice() {
 }
 
 
- function determineWinner(userChoice, computerChoice) {
- 
- }
+function determineWinner(userInput, getComputerChoice) {
+  if (userInput === getComputerChoice) {
+    return = "Tie!";
+  } else if (userInput === "rock", getComputerChoice === "scissors") {
+    return = "User Won";
+  } else if (getComputerChoice === "paper") {
+    return = "Computer won";
+  } else if (userInput === "scissors", getComputerChoice === "rock") {
+    return = "Computer won";
+  } else if (getComputerChoice === "paper") {
+    return = "User Won";
+  } else if (userInput==="Paper",)
+
+}
+
+
+
+function playGane() {
+
+}
