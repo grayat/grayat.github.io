@@ -28,14 +28,14 @@ function determineWinner(userChoice, computerChoice) {
     return = "Tie!";
   }
   if (userChoice === "rock") {
-    if (computerChoice === "scissors" || computerChoice ==="lizard") {
+    if (computerChoice === "scissors" || computerChoice === "lizard") {
       return "You Won!";
     } else {
       return "Computer Won!";
     }
   }
-  if (userChoice === "paper") { 
-    if (computerChoice === "scissors" || computerChoice ==="lizard") {
+  if (userChoice === "paper") {
+    if (computerChoice === "scissors" || computerChoice === "lizard") {
       return 'Computer Won!';
     } else {
       return 'You won!';
@@ -51,42 +51,43 @@ function determineWinner(userChoice, computerChoice) {
   }
 
   if (userchoice === "scissors") {
-    if (compuerChoice === "paper" || computerChoice==="lizard") {
+    if (compuerChoice === "paper" || computerChoice === "lizard") {
       return "You Win";
     } else {
       return "Computer Won";
     }
   }
-   if (userChoice === "bomb") {
-      return "BOMB! YOU WIN!!";
+  if (userChoice === "bomb") {
+    return "BOMB! YOU WIN!!";
+  }
+
+
+  if (userChoice === "lizard") {
+    if (computerChoice === "spock" || computerChoice === "paper")
+      return "You Won";
+    }else {
+      return "Computer Won";
     }
-  }
- 
- if(userChoice ==="lizard"){
-  if(computerChoice ==="spock" || computerChoice ==="paper" )
-  return "You Won";
- } else {
- return "Computer Won";
- }
- 
- 
- if(userChoice===="spock") {
-  if (computerChoice==="scissors" || computerChoice ==="rock")
-  return "You Won";
- } else {
- return "Computer Won";
- }
- 
-  function playGame() {
-    var userChoice = getUserChoice();
-    var computerChoice = getComputerChoice();
+  
 
-    document.write(userChoice);
-    document.write(computerChoice);
-
-    document.write("The result " + determineWinner(userChoice, computerChoice));
+  if (userChoice === "spock") {
+    if (computerChoice === "scissors" || computerChoice === "rock")
+      return "You Won";
+  } else {
+    return "Computer Won";
   }
 
-  playGame();
-  
-  
+}
+
+
+function playGame() {
+  var userChoice = getUserChoice();
+  var computerChoice = getComputerChoice();
+
+  document.write(userChoice);
+  document.write(computerChoice);
+
+  document.write("The result " + determineWinner(userChoice, computerChoice));
+}
+
+playGame();
