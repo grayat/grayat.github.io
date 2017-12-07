@@ -10,3 +10,26 @@ document.write("<br>");
 }
 }
 
+var myPlaces = [" Greece", " Hawaii", " Spain"];
+var friendPlaces = [" Greece", " Jamica", " London"];
+
+for (var i = 0; i < myPlaces.length; i++) {
+ 
+  for (var j = 0; j < friendPlaces.length; j++) {
+   
+    if (myPlaces[i] === friendPlaces[j]){
+    document.write("Match" + myPlaces[i]);
+    }
+  }
+}
+
+
+var cards = ["Diamond", "Spade", "Heart", "Club"];
+var currentCard=["Hearts"];
+
+while (currentCard !== "Spade") {
+document.write(currentCard + "<br>");
+var randomNumber = Math.floor(Math.random() * 4);
+currentCard = cards[randomNumber];
+}
+document.write("I found a Spade");
