@@ -24,10 +24,10 @@ if (askUser === "yes") {
   alert("*Primrose is found and is being forced out of the crowd by the guards* You, Katniss Everdeen are given the opportunity to volunteer as tribute and take your sisters place in the hunger games.");
 }
 
-askUser= prompt ("Are you going to volunteer as tribute?");
+askUser = prompt("Are you going to volunteer as tribute?");
 
 switch (askUser) {
-case "yes":
+  case "yes":
     alert("Effie: Oh wow this is a first, we have a volunteer who is willing to go to the hunger games in place of her sister!");
     break;
   case "no":
@@ -38,3 +38,4 @@ case "yes":
 }
 
 
+askUser = prompt("Effie: Great! The male winner is Peeta.... we will waste no time");
