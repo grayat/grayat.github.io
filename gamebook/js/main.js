@@ -38,4 +38,50 @@ switch (askUser) {
 }
 
 
-askUser = prompt("Effie: Great! The male winner is Peeta.... we will waste no time");
+alert("Effie: Great! The male winner is Peeta.... we will waste no time.");
+
+alert("Katniss and Peeta get to the headquaters and are given the option to start training to help them in the hunger games.");
+
+
+askUser = prompt("Do you wish to train in benefit to your success in the hunger games?");
+
+
+if (askUser === "yes") {
+  alert("Alright Great!you will start your training immediatly.");
+} else if (askUser === "no") {
+  alert("Okay! you are prepared and can go straight into combat.");
+}
+
+switch (askUser) {
+case  "yes":
+alert("You are well trained and ready to fight in the hunger games!");
+break;
+
+case "no":
+alert("Get ready the games start in 30 seconds");
+break;
+}
+
+
+alert("The game has started and already a girl is trying to kill you!");
+
+askUser=prompt ("Do you your gun or bow and arrow");
+
+if(askUser==="gun" ) {
+alert("You aim and you shoot but you miss and run away to look for a hiding spot.");
+} else if (askUser==="bow and arrow") {
+alert("You shoot and wound the girl and run away afterwards and try to hide from other tributes.");
+}
+
+alert("The games have been going on for about 45 minutes now and you managed to kill around 4 people, not wanting to but having to because you need to surive and they tried to kill you first");
+
+askUser = prompt ("You see the little girl that tried to kill you ealier. Do you kill her or spare her life?");
+
+
+
+if(askUser==="Kill her"){
+alert("You deserve to die because you took away and innocent young life. END GAME YOU LOST.........");
+} else if (askUser==="spare her life") {
+alert("Oh no, you under estimated her, she took advantage of your kindness and killed you. END GAME YOU LOST......");
+}
+
