@@ -74,7 +74,7 @@ alert("You shoot and wound the girl and run away afterwards and try to hide from
 }
 
 
-alert("You are running out of suuplies and you see a stash near a tree but there are 2 people garding it and you only have one arrow left");
+alert("You are running out of supplies and you see a stash near a tree but there are 2 people garding it and you only have one arrow left");
 
 askUser=prompt("Are you going to risk it and go fight and get the stash with only minimum supplies remaining?");
 
