@@ -73,10 +73,22 @@ alert("You aim and you shoot but you miss and run away to look for a hiding spot
 alert("You shoot and wound the girl and run away afterwards and try to hide from other tributes.");
 }
 
+
+alert("You are running out of suuplies and you see a stash near a tree but there are 2 people garding it and you only have one arrow left");
+
+askUser=prompt("Are you going to risk it and go fight and get the stash with only minimum supplies remaining?");
+
+if(askUser==="yes"){
+alert("You aim and shoot him in the heart. As your running towards the tree the other guard is coming at you and remember that you have an extra knife in your boot. You throw the knife and kill the other guard and get the stash.");
+} else if(askUser==="no") {
+alert("You have to try and survive with your little stash for as long as possible until you get another chance to gey more supplies.");
+}
+
+
 alert("The games have been going on for about 45 minutes now and you managed to kill around 4 people, not wanting to but having to because you need to surive and they tried to kill you first");
 
-askUser = prompt ("You see the little girl that tried to kill you ealier. Do you kill her or spare her life?");
 
+askUser = prompt ("You see the little girl that tried to kill you ealier. Do you kill her or spare her life?");
 
 
 if(askUser==="Kill her"){
@@ -84,4 +96,3 @@ alert("You deserve to die because you took away and innocent young life. END GAM
 } else if (askUser==="spare her life") {
 alert("Oh no, you under estimated her, she took advantage of your kindness and killed you. END GAME YOU LOST......");
 }
-
