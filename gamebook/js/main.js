@@ -4,7 +4,7 @@ askUser.toLowerCase();
 
 switch (askUser) {
   case "yes":
-    alert("Great! Continue on with the selection of the tributes");
+    alert("Great! Continue on with the selection of the tributes.");
     break;
   case "no":
     alert("Oh no! Game has ended. You lost!");
@@ -58,14 +58,14 @@ switch (askUser) {
     break;
 
   case "no":
-    alert("Get ready the games start in 30 seconds");
+    alert("Get ready the games start in 30 seconds!");
     break;
 }
 
 
 alert("The game has started and already a girl is trying to kill you!");
 
-askUser = prompt("Do you your gun or bow and arrow");
+askUser = prompt("Do you use gun or bow and arrow?");
 
 if (askUser === "gun") {
   alert("You aim and you shoot but you miss and run away to look for a hiding spot.");
@@ -74,7 +74,7 @@ if (askUser === "gun") {
 }
 
 
-alert("You are running out of supplies and you see a stash near a tree but there are 2 people garding it and you only have one arrow left");
+alert("You are running out of supplies and you see a stash near a tree but there are 2 people garding it and you only have one arrow left.");
 
 askUser = prompt("Are you going to risk it and go fight and get the stash with only minimum supplies remaining?");
 
@@ -84,8 +84,7 @@ if (askUser === "yes" || "risk it") {
   alert("You have to try and survive with your little stash for as long as possible until you get another chance to gey more supplies.");
 }
 
-
-alert("The games have been going on for about 45 minutes now and you managed to kill around 4 people, not wanting to but having to because you need to surive and they tried to kill you first");
+alert("The games have been going on for about 45 minutes now and you managed to kill around 4 people, not wanting to but having to because you need to surive and they tried to kill you first.");
 
 
 askUser = prompt("You see the little girl that tried to kill you ealier. Do you kill her or spare her life?");
