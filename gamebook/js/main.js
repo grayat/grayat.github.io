@@ -81,13 +81,40 @@ askUser = prompt("Are you going to risk it and go fight and get the stash with o
 if (askUser === "yes" || "risk it") {
   alert("You aim and shoot him in the heart. As your running towards the tree the other guard is coming at you and remember that you have an extra knife in your boot. You throw the knife and kill the other guard and get the stash.");
 } else if (askUser === "no") {
-  alert("You have to try and survive with your little stash for as long as possible until you get another chance to gey more supplies.");
+  alert("You have to try and survive with your little stash for as long as possible until you get another chance to gey more supplies. You realize that you have a couple other supplies in your bag and should be good enough for awhile.");
 }
+
+
+askUser = prompt("You are now good to go and should have plenty of supplies for another hour or so, although you are starting to get hungry. Do you go look for food and risk more deaths or deal with the hunger? ");
+
+if (askUser === "go look for food") {
+  alert("You go look around carefully and notice some people took all the food and are saving it for themselves.");
+} else if (askUser === "deal with the hunger") {
+  alert("You decide you are strong enough and can hold if off until you find a good opportunity to get some food.");
+}
+
+alert("You've now seen that they are people that are keeping the all the food for themselves and you count a total 5 people that are stationed there.");
+
+askUser=prompt("Are you going to go kill everyone and get the food?");
+
+
+switch(askUser) {
+case "yes":
+alert("You manage to kill everyone and get the food and regain energy.");
+break;
+case "no":
+alert("You once again decide that food isn't your main concern and decide to continue on without it.");
+break;
+default:
+alert("Oh no! Re-fresh page and start the game again");
+break;
+}
+
 
 alert("The games have been going on for about 45 minutes now and you managed to kill around 4 people, not wanting to but having to because you need to surive and they tried to kill you first.");
 
 
-askUser = prompt("You see the little girl that tried to kill you ealier. Do you kill her or spare her life?");
+askUser = prompt("You see the little girl that tried to kill you earlier. Do you kill her or spare her life?");
 
 
 if (askUser === "Kill her") {
