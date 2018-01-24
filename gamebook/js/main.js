@@ -1,3 +1,4 @@
+<script>
 confirm("Are you ready to play?");
 var askUser = prompt("Are you ready for the hunger games?");
 askUser.toLowerCase();
@@ -122,3 +123,6 @@ if (askUser === "Kill her") {
 } else if (askUser === "spare her life") {
   alert("Oh no, you under estimated her, she took advantage of your kindness and killed you. END GAME YOU LOST......");
 }
+
+
+</script>
